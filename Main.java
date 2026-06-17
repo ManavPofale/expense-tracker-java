@@ -13,7 +13,6 @@ public class Main {
         System.out.println("==========================================");
         System.out.println("         WELCOME TO EXPENSE TRACKER      ");
         System.out.println("==========================================");
-
         do {
             System.out.println("\n======= EXPENSE TRACKER MENU =======");
             System.out.println("  1. Add Expense");
