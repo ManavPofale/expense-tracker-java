@@ -6,14 +6,14 @@ public class ExpenseManager {
 
     private ArrayList<Expense> expenses = new ArrayList<>();
 
-    // Add a new expense
+    // Add a new expense:
     public void addExpense(double amount, String category, String description) {
         Expense expense = new Expense(amount, category, description);
         expenses.add(expense);
         System.out.println("\n✔ Expense added successfully!");
     }
 
-    // View all expenses
+    // View all expenses:
     public void viewExpenses() {
         if (expenses.isEmpty()) {
             System.out.println("\n No expenses found. Start adding some!");
@@ -27,10 +27,11 @@ public class ExpenseManager {
         System.out.println("-----------------------------------");
     }
 
-    // Delete expense by ID
+    // Delete expense by ID:
     public void deleteExpense(int id) {
         boolean found = false;
 
+        
         for (int i = 0; i < expenses.size(); i++) {
             if (expenses.get(i).getId() == id) {
                 expenses.remove(i);
@@ -40,18 +41,21 @@ public class ExpenseManager {
             }
         }
 
+        
         if (!found) {
             System.out.println("\n✘ No expense found with ID: " + id);
         }
     }
+    
 
-    // Show summary
+    // Show summary:
     public void showSummary() {
         if (expenses.isEmpty()) {
             System.out.println("\n No expenses to summarize.");
             return;
         }
 
+        
         double total = 0;
         for (Expense e : expenses) {
             total += e.getAmount();
