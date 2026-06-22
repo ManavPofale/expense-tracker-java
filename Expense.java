@@ -2,8 +2,7 @@ package expensetracker;
 
 public class Expense {
 
-    private static int idCounter = 1; 
-
+    private static int idCounter = 1;
     private int id;
     private double amount;
     private String category;
