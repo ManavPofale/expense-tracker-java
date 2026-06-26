@@ -5,7 +5,6 @@ import java.util.ArrayList;
 public class ExpenseManager {
 
     private ArrayList<Expense> expenses = new ArrayList<>();
-
     // Add a new expense:
     public void addExpense(double amount, String category, String description) {
         Expense expense = new Expense(amount, category, description);
@@ -24,7 +23,7 @@ public class ExpenseManager {
         for (Expense e : expenses) {
             System.out.println(e);
         }
-        System.out.println("-----------------------------------");
+        System.out.println("----------------------");
     }
 
     // Delete expense by ID:
@@ -40,14 +39,12 @@ public class ExpenseManager {
                 break;
             }
         }
-
         
         if (!found) {
             System.out.println("\n✘ No expense found with ID: " + id);
         }
     }
     
-
     // Show summary:
     public void showSummary() {
         if (expenses.isEmpty()) {
@@ -64,6 +61,6 @@ public class ExpenseManager {
         System.out.println("\n========== SUMMARY ==========");
         System.out.println(" Total Expenses : " + expenses.size());
         System.out.printf(" Total Spent    : Rs. %.2f%n", total);
-        System.out.println("==============================");
+        System.out.println("======================");
     }
 }
