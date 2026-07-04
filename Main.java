@@ -11,7 +11,6 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         ExpenseManager manager = new ExpenseManager();
         int choice;
-
         System.out.println("==========================================");
         System.out.println("         WELCOME TO EXPENSE TRACKER      ");
         System.out.println("==========================================");
