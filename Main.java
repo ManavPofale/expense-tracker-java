@@ -6,13 +6,12 @@ public class Main {
 
     
     public static void main(String[] args) {
-
         
         Scanner scanner = new Scanner(System.in);
         ExpenseManager manager = new ExpenseManager();
         int choice;
         System.out.println("==========================================");
-        System.out.println("         WELCOME TO EXPENSE TRACKER      ");
+        System.out.println("      WELCOME TO EXPENSE TRACKER      ");
         System.out.println("==========================================");
         do {
             System.out.println("\n======= EXPENSE TRACKER MENU =======");
