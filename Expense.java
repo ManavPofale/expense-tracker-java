@@ -7,7 +7,6 @@ public class Expense {
     private double amount;
     private String category;
     private String description;
-
     public Expense(double amount, String category, String description) {
         this.id = idCounter++;
         this.amount = amount;
