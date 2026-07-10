@@ -3,7 +3,6 @@ package expensetracker;
 import java.util.ArrayList;
 
 public class ExpenseManager {
-
     private ArrayList<Expense> expenses = new ArrayList<>();
     // Add a new expense:
     public void addExpense(double amount, String category, String description) {
@@ -11,26 +10,21 @@ public class ExpenseManager {
         expenses.add(expense);
         System.out.println("\n✔ Expense added successfully!");
     }
-
     // View all expenses:
     public void viewExpenses() {
         if (expenses.isEmpty()) {
             System.out.println("\n No expenses found. Start adding some!");
             return;
         }
-
         System.out.println("\n---------- YOUR EXPENSES ----------");
         for (Expense e : expenses) {
             System.out.println(e);
         }
         System.out.println("----------------------");
     }
-
     // Delete expense by ID:
     public void deleteExpense(int id) {
         boolean found = false;
-
-        
         for (int i = 0; i < expenses.size(); i++) {
             if (expenses.get(i).getId() == id) {
                 expenses.remove(i);
